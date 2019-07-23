@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		702B843222C0D0D8001FDCE1 /* DNCustomTabBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNCustomTabBar.entitlements; sourceTree = "<group>"; };
 		703369ED22969813001B43F7 /* PresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
 		703369EE22969813001B43F7 /* PresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 		705C818322963C10009D8630 /* DNCustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNCustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +111,7 @@
 		705C818522963C10009D8630 /* DNCustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				702B843222C0D0D8001FDCE1 /* DNCustomTabBar.entitlements */,
 				705C818622963C10009D8630 /* AppDelegate.h */,
 				705C818722963C10009D8630 /* AppDelegate.m */,
 				705C818922963C10009D8630 /* ViewController.h */,
@@ -214,6 +216,11 @@
 				TargetAttributes = {
 					705C818222963C10009D8630 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					705C819A22963C11009D8630 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -453,14 +460,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNCustomTabBar/DNCustomTabBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MERPXG389L;
+				DEVELOPMENT_TEAM = 65U6KY96UM;
 				INFOPLIST_FILE = DNCustomTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Remember.DNCustomTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = DNCustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,14 +479,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DNCustomTabBar/DNCustomTabBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MERPXG389L;
+				DEVELOPMENT_TEAM = 65U6KY96UM;
 				INFOPLIST_FILE = DNCustomTabBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Remember.DNCustomTabBar;
+				PRODUCT_BUNDLE_IDENTIFIER = DNCustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
